@@ -7,7 +7,7 @@
 <body style="background-color:#671caa;">
 
 <center>
-    <img id="imageToSwap" src="" style="width:640px; height:960px" align="left"/> 
+    <img vaid="imageToSwap" src="" style="width:640px; height:960px" align="left"/> 
     <img id="vs.png" src="vs.png" style="position:relative; height:450px; top:250px"/>
     <img id="imageToSwap2" src="" style="width:640px; height:960px" align="right"/>
 </center>
@@ -28,13 +28,13 @@
 <br>
 <br>
 <br>
-	
+
 <center>
 <d1>Card 1</d1>
 <br>
 <label for="card1">Choose a card:</label>
 <select id="card1" onChange="swapImage()">
-  <option value="null">Pick a card</option>
+  <option value="placeholder.jpg">Pick a card</option>
   <optgroup label="Diamond">
         <option value="cards/46.jpg">46 - Campos</option>
         <option value="cards/03.jpg">03 - Dxrk</option>
@@ -150,7 +150,7 @@ function swapImage(){
 <br>
 <label for="card2">Choose a card:</label>
 <select id="card2" onChange="swapImage2()">
-  <option value="null">Pick a card</option>
+  <option value="placeholder.jpg">Pick a card</option>
   <optgroup label="Diamond">
         <option value="cards/46.jpg">46 - Campos</option>
         <option value="cards/03.jpg">03 - Dxrk</option>
@@ -261,5 +261,6 @@ function swapImage2(){
 </script>
 <br>
 </center>
+
 </body>
 </html>
