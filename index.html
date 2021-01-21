@@ -1,0 +1,265 @@
+<html>
+
+<head>
+<title>RLBC Stream Assistant</title>
+</head>
+
+<body style="background-color:#671caa;">
+
+<center>
+    <img id="imageToSwap" src="" style="width:640px; height:960px" align="left"/> 
+    <img id="vs.png" src="vs.png" style="position:relative; height:450px; top:250px"/>
+    <img id="imageToSwap2" src="" style="width:640px; height:960px" align="right"/>
+</center>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<d1>Card 1</d1>
+<br>
+<label for="card1">Choose a card:</label>
+<select id="card1" onChange="swapImage()">
+  <option value="null">Pick a card</option>
+  <optgroup label="Diamond">
+        <option value="cards/46.jpg">Campos</option>
+        <option value="cards/03.jpg">Dxrk</option>
+        <option value="cards/19.jpg">GamerPlayz</option>
+        <option value="cards/33.jpg">Godez</option>
+        <option value="cards/18.jpg">Jackie</option>
+        <option value="cards/31.jpg">Jynx</option>
+        <option value="cards/30.jpg">Mizen</option>
+        <option value="cards/38.jpg">Schefi</option>
+        <option value="cards/51.jpg">Som1</option>
+        <option value="cards/32.jpg">WonkyWoa</option>
+    </optgroup>
+  <optgroup label="Champ 1">
+        <option value="cards/37.jpg">Axlos</option>
+        <option value="cards/36.jpg">Venyu</option>
+        <option value="cards/50.jpg">xWispSR</option>
+    </optgroup>
+  <optgroup label="Champ 2">
+        <option value="cards/49.jpg">Sgt.Yoshi</option>
+        <option value="cards/40.jpg">Hazzarinio</option>
+        <option value="cards/35.jpg">Panda</option>
+        <option value="cards/16.jpg">Sklapella</option>
+    </optgroup>
+  <optgroup label="Champ 3">
+        <option value="cards/14.jpg">AJ</option>
+        <option value="cards/34.jpg">Chain</option>
+        <option value="cards/41.jpg">DeclanRose</option>
+        <option value="cards/29.jpg">Destren</option>
+        <option value="cards/23.jpg">Kaze</option>
+        <option value="cards/39.jpg">Pove</option>
+    </optgroup>
+  <optgroup label="Grand Champ 1">
+        <option value="cards/09.jpg">AirCharged</option>
+        <option value="cards/47.jpg">Arckk</option>
+        <option value="cards/26.jpg">D4rk</option>
+        <option value="cards/02.jpg">Jawpy</option>
+        <option value="cards/07.jpg">Kro</option>
+        <option value="cards/11.jpg">Max</option>
+        <option value="cards/20.jpg">McLobe</option>
+        <option value="cards/22.jpg">Metjez</option>
+        <option value="cards/28.jpg">Morck</option>
+        <option value="cards/43.jpg">OllieM</option>
+        <option value="cards/17.jpg">Pannen</option>
+        <option value="cards/48.jpg">Sheps</option>
+        <option value="cards/15.jpg">Sky</option>
+        <option value="cards/24.jpg">Sohnemann</option>
+        <option value="cards/25.jpg">Toasty</option>
+        <option value="cards/27.jpg">Wavvy</option>
+    </optgroup>
+  <optgroup label="Grand Champ 2">
+        <option value="cards/43.jpg">Bloom</option>
+        <option value="cards/53.jpg">Detroit</option>
+        <option value="cards/10.jpg">Drku</option>
+        <option value="cards/21.jpg">LorisRaptor</option>
+        <option value="cards/08.jpg">Mordicia</option>
+        <option value="cards/52.jpg">Preceps</option>
+        <option value="cards/06.jpg">WaN</option>
+    </optgroup>
+  <optgroup label="Grand Champ 3">
+        <option value="cards/45.jpg">Dizzle</option>
+        <option value="cards/05.jpg">Smashy</option>
+        <option value="cards/13.jpg">Stero</option>
+    </optgroup>
+  <optgroup label="SuperSonic Ledgend">
+        <option value="cards/04.jpg">Feenix</option>
+        <option value="cards/12.jpg">NoahPoah</option>
+        <option value="cards/01.jpg">Raid</option>
+    </optgroup>
+  <optgroup label="Inform">
+        <option value="cards/I11.jpg">Bloom</option>
+        <option value="cards/I12.jpg">Hazzarinio</option>
+        <option value="cards/I03.jpg">Kro</option>
+        <option value="cards/I04.jpg">Lorisraptor</option>
+        <option value="cards/I10.jpg">Max</option>
+        <option value="cards/I01.jpg">McLobe</option>
+        <option value="cards/I07.jpg">NoahPoah</option>
+        <option value="cards/I06.jpg">Raid</option>
+        <option value="cards/I02.jpg">Sklapella</option>
+        <option value="cards/I08.jpg">Smashy</option>
+        <option value="cards/I05.jpg">Stero</option>
+        <option value="cards/I09.jpg">Venyu</option>
+    </optgroup>
+  <optgroup label="Champion">
+        <option value="cards/C13.jpg">AJ</option>
+        <option value="cards/C14.jpg">Chain</option>
+        <option value="cards/C06.jpg">Dizzle</option>
+        <option value="cards/C12.jpg">Drku</option>
+        <option value="cards/C07.jpg">Feenix</option>
+        <option value="cards/C11.jpg">Jawpy</option>
+        <option value="cards/C15.jpg">Kro</option>
+        <option value="cards/C04.jpg">Max</option>
+        <option value="cards/C03.jpg">Noah</option>
+        <option value="cards/C02.jpg">Olliem</option>
+        <option value="cards/C01.jpg">Raid</option>
+        <option value="cards/C16.jpg">Sky</option>
+        <option value="cards/C09.jpg">Smashy</option>
+        <option value="cards/C10.jpg">Stero</option>
+        <option value="cards/C08.jpg">Toasty</option>
+        <option value="cards/C05.jpg">Wan</option>
+    </optgroup>
+</select>
+<script type="text/javascript">
+function swapImage(){
+	var image = document.getElementById("imageToSwap");
+	var dropd = document.getElementById("card1");
+	image.src = dropd.value;	
+};
+</script>
+<br>
+
+<br>
+<d1>Card 2</d1>
+<br>
+<label for="card2">Choose a card:</label>
+<select id="card2" onChange="swapImage2()">
+  <option value="null">Pick a card</option>
+  <optgroup label="Diamond">
+        <option value="cards/46.jpg">Campos</option>
+        <option value="cards/03.jpg">Dxrk</option>
+        <option value="cards/19.jpg">GamerPlayz</option>
+        <option value="cards/33.jpg">Godez</option>
+        <option value="cards/18.jpg">Jackie</option>
+        <option value="cards/31.jpg">Jynx</option>
+        <option value="cards/30.jpg">Mizen</option>
+        <option value="cards/38.jpg">Schefi</option>
+        <option value="cards/51.jpg">Som1</option>
+        <option value="cards/32.jpg">WonkyWoa</option>
+    </optgroup>
+  <optgroup label="Champ 1">
+        <option value="cards/37.jpg">Axlos</option>
+        <option value="cards/36.jpg">Venyu</option>
+        <option value="cards/50.jpg">xWispSR</option>
+    </optgroup>
+  <optgroup label="Champ 2">
+        <option value="cards/49.jpg">Sgt.Yoshi</option>
+        <option value="cards/40.jpg">Hazzarinio</option>
+        <option value="cards/35.jpg">Panda</option>
+        <option value="cards/16.jpg">Sklapella</option>
+    </optgroup>
+  <optgroup label="Champ 3">
+        <option value="cards/14.jpg">AJ</option>
+        <option value="cards/34.jpg">Chain</option>
+        <option value="cards/41.jpg">DeclanRose</option>
+        <option value="cards/29.jpg">Destren</option>
+        <option value="cards/23.jpg">Kaze</option>
+        <option value="cards/39.jpg">Pove</option>
+    </optgroup>
+  <optgroup label="Grand Champ 1">
+        <option value="cards/09.jpg">AirCharged</option>
+        <option value="cards/47.jpg">Arckk</option>
+        <option value="cards/26.jpg">D4rk</option>
+        <option value="cards/02.jpg">Jawpy</option>
+        <option value="cards/07.jpg">Kro</option>
+        <option value="cards/11.jpg">Max</option>
+        <option value="cards/20.jpg">McLobe</option>
+        <option value="cards/22.jpg">Metjez</option>
+        <option value="cards/28.jpg">Morck</option>
+        <option value="cards/43.jpg">OllieM</option>
+        <option value="cards/17.jpg">Pannen</option>
+        <option value="cards/48.jpg">Sheps</option>
+        <option value="cards/15.jpg">Sky</option>
+        <option value="cards/24.jpg">Sohnemann</option>
+        <option value="cards/25.jpg">Toasty</option>
+        <option value="cards/27.jpg">Wavvy</option>
+    </optgroup>
+  <optgroup label="Grand Champ 2">
+        <option value="cards/43.jpg">Bloom</option>
+        <option value="cards/53.jpg">Detroit</option>
+        <option value="cards/10.jpg">Drku</option>
+        <option value="cards/21.jpg">LorisRaptor</option>
+        <option value="cards/08.jpg">Mordicia</option>
+        <option value="cards/52.jpg">Preceps</option>
+        <option value="cards/06.jpg">WaN</option>
+    </optgroup>
+  <optgroup label="Grand Champ 3">
+        <option value="cards/45.jpg">Dizzle</option>
+        <option value="cards/05.jpg">Smashy</option>
+        <option value="cards/13.jpg">Stero</option>
+    </optgroup>
+  <optgroup label="SuperSonic Ledgend">
+        <option value="cards/04.jpg">Feenix</option>
+        <option value="cards/12.jpg">NoahPoah</option>
+        <option value="cards/01.jpg">Raid</option>
+    </optgroup>
+  <optgroup label="Inform">
+        <option value="cards/I11.jpg">Bloom</option>
+        <option value="cards/I12.jpg">Hazzarinio</option>
+        <option value="cards/I03.jpg">Kro</option>
+        <option value="cards/I04.jpg">Lorisraptor</option>
+        <option value="cards/I10.jpg">Max</option>
+        <option value="cards/I01.jpg">McLobe</option>
+        <option value="cards/I07.jpg">NoahPoah</option>
+        <option value="cards/I06.jpg">Raid</option>
+        <option value="cards/I02.jpg">Sklapella</option>
+        <option value="cards/I08.jpg">Smashy</option>
+        <option value="cards/I05.jpg">Stero</option>
+        <option value="cards/I09.jpg">Venyu</option>
+    </optgroup>
+  <optgroup label="Champion">
+        <option value="cards/C13.jpg">AJ</option>
+        <option value="cards/C14.jpg">Chain</option>
+        <option value="cards/C06.jpg">Dizzle</option>
+        <option value="cards/C12.jpg">Drku</option>
+        <option value="cards/C07.jpg">Feenix</option>
+        <option value="cards/C11.jpg">Jawpy</option>
+        <option value="cards/C15.jpg">Kro</option>
+        <option value="cards/C04.jpg">Max</option>
+        <option value="cards/C03.jpg">Noah</option>
+        <option value="cards/C02.jpg">Olliem</option>
+        <option value="cards/C01.jpg">Raid</option>
+        <option value="cards/C16.jpg">Sky</option>
+        <option value="cards/C09.jpg">Smashy</option>
+        <option value="cards/C10.jpg">Stero</option>
+        <option value="cards/C08.jpg">Toasty</option>
+        <option value="cards/C05.jpg">Wan</option>
+    </optgroup>
+</select>
+<script type="text/javascript">
+function swapImage2(){
+	var image = document.getElementById("imageToSwap2");
+	var dropd = document.getElementById("card2");
+	image.src = dropd.value;	
+};
+</script>
+<br>
+</center>
+
+</body>
+</html>
