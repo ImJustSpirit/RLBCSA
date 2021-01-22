@@ -53,10 +53,10 @@
   </head>
 
   <body style="background-color:#671caa;">
-
-    <input class="solid" style="width:640px; height:75px" align="left" type="text" id="fname" name="fname" value="Player 1 Name">
-    <input class="solid" style="position:relative; width:640px; height:75px; left:620" align="right" type="text" id="sname" name="sname" value="Player 2 Name">
-
+    <div id="myDIV2">
+      <input class="solid" style="width:640px; height:75px" align="left" type="text" id="fname" name="fname" value="Player 1 Name">
+      <input class="solid" style="position:relative; width:640px; height:75px; left:620" align="right" type="text" id="sname" name="sname" value="Player 2 Name">
+    </div>
     <center>
       <img id="imageToSwap" src="" style="width:640px; height:960px" align="left" />
       <img id="vs.png" src="vs.png" style="position:relative; height:450px; top:200px" />
@@ -78,12 +78,11 @@
     <br>
 
     <center>
-      <button class="button button5" onclick="myFunction()">Toggle Settings</button>
+      <button class="button button5" onclick="toggleSettings()">Toggle Settings</button>
 
       <div id="myDIV">
-
         <script>
-          function myFunction() {
+          function toggleSettings() {
             var x = document.getElementById("myDIV");
             if (x.style.display === "none") {
               x.style.display = "block";
@@ -93,7 +92,19 @@
           }
 
         </script>
+        <script>
+          function toggleNames() {
+            var x = document.getElementById("myDIV2");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+
+        </script>
         <br>
+        <button onclick="toggleNames();">Toggle Names</button>
         <button onclick="openFullscreen();">Fullscreen Mode</button>
         <script>
           /* Get the documentElement (<html>) to display the page in fullscreen */
@@ -362,14 +373,13 @@
 
         </script>
         <br>
-        <p>
-          Made by JustSpirit (ImJustSpirit) for RLBC.
-          <br>
-          <br>
-          <input type="button" onclick="location.href='http://battle-cards.co.uk';" value="RLBC" /> <input type="button" onclick="location.href='https://discord.com/invite/aMZrvJR';" value="Discord" /> <input type="button" onclick="location.href='http://twitch.tv/aircharged';" value="Twitch" />
-        </p>
-
       </div>
+      <p>
+        Made by JustSpirit (ImJustSpirit) for RLBC.
+        <br>
+        <br>
+        <input type="button" onclick="location.href='http://battle-cards.co.uk';" value="RLBC" /> <input type="button" onclick="location.href='https://discord.com/invite/aMZrvJR';" value="Discord" /> <input type="button" onclick="location.href='http://twitch.tv/aircharged';" value="Twitch" />
+      </p>
 
     </center>
 
