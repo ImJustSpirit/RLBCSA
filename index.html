@@ -2,14 +2,40 @@
 
   <head>
     <title>RLBC Stream Assistant</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <style>
+      input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 3px solid #ccc;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+        font-size: 50px;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+      }
+
+      input[type=text]:focus {
+        border: 3px solid #555;
+      }
+
+    </style>
   </head>
 
   <body style="background-color:#671caa;">
 
+    <input class="solid" style="width:600px; height:75px" align="left" type="text" id="fname" name="fname" value="Player 1 Name">
+    <input class="solid" style="width:681px; height:75px" type="text" id="title" name="title" value="RLBC Stream Assistant">
+    <input class="solid" style="width:600px; height:75px" align="right" type="text" id="sname" name="sname" value="Player 2 Name">
+    
     <center>
-      <img id="imageToSwap" src="" style="width:640px; height:960px" align="left" />
+      <img id="imageToSwap" src="" style="width:600px; height:900px" align="left" />
       <img id="vs.png" src="vs.png" style="position:relative; height:450px; top:250px" />
-      <img id="imageToSwap2" src="" style="width:640px; height:960px" align="right" />
+      <img id="imageToSwap2" src="" style="width:600px; height:900px" align="right" />
     </center>
 
     <br>
@@ -30,10 +56,9 @@
     <br>
 
     <center>
-      <d1>Card 1</d1>
       <br>
-      <label for="card1">Choose a card:</label>
-      <select id="card1" onOpen="openImage()" onChange="swapImage()">
+      <label for="card1">Choose player 1 card:</label>
+      <select id="card1" onChange="swapImage()">
         <option value="placeholder.jpg">Pick a card</option>
         <optgroup label="Diamond">
           <option value="cards/46.jpg">46 - Campos</option>
@@ -152,13 +177,10 @@
         };
 
       </script>
-      <br>
 
       <br>
-      <d1>Card 2</d1>
-      <br>
-      <label for="card2">Choose a card:</label>
-      <select id="card2" onLoad="swapImage()" onChange="swapImage2()">
+      <label for="card2">Choose player 2 card:</label>
+      <select id="card2" onLoad="swapImage2()" onChange="swapImage2()">
         <option value="placeholder.jpg">Pick a card</option>
         <optgroup label="Diamond">
           <option value="cards/46.jpg">46 - Campos</option>
@@ -270,10 +292,10 @@
 
       </script>
       <br>
-      <br>
       <p>
         Made by JustSpirit (ImJustSpirit) for RLBC.
         <br>
+      <br>
         <input type="button" onclick="location.href='http://battle-cards.co.uk';" value="RLBC" /> <input type="button" onclick="location.href='https://discord.com/invite/aMZrvJR';" value="Discord" /> <input type="button" onclick="location.href='http://twitch.tv/aircharged';" value="Twitch" />
       </p>
 
