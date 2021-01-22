@@ -123,9 +123,6 @@
           }
 
         </script>
-        <br>
-        <button class="click1" onclick="toggleNames();">Toggle Names</button>
-        <button class="click1" onclick="openFullscreen();">Fullscreen Mode</button>
         <script>
           /* Get the documentElement (<html>) to display the page in fullscreen */
           var elem = document.documentElement;
@@ -157,7 +154,27 @@
           }
 
         </script>
+        <script>
+          function coinFlip() {
+            var x = Math.floor(Math.random() * 2);
+            console.log(x);
+            if (x == 0) {
+              document.getElementById("Coin").innerHTML = "Player 1";
+            } else {
+              document.getElementById("Coin").innerHTML = "Player 2";
+            }
+          }
+
+          coinFlip();
+
+        </script>
+          
         <br>
+        <button class="click1" onclick="toggleNames();">Toggle Names</button>
+        <button class="click1" onclick="openFullscreen();">Fullscreen Mode</button>
+        <button class="click1" onclick="coinFlip();" onclick="myFunction();" id="Coin">Who goes first</button>
+        <br>
+
         <label for="card1">Choose player 1 card:</label>
         <select style="font-family: 'Montserrat', sans-serif;" id="card1" onChange="swapImage()">
           <option value="placeholder.jpg">Pick a card</option>
