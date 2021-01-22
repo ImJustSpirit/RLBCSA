@@ -28,14 +28,13 @@
 
   <body style="background-color:#671caa;">
 
-    <input class="solid" style="width:600px; height:75px" align="left" type="text" id="fname" name="fname" value="Player 1 Name">
-    <input class="solid" style="width:695px; height:75px" type="text" id="title" name="title" value="RLBC Stream Assistant">
-    <input class="solid" style="width:600px; height:75px" align="right" type="text" id="sname" name="sname" value="Player 2 Name">
-    
+    <input class="solid" style="width:640px; height:75px" align="left" type="text" id="fname" name="fname" value="Player 1 Name">
+    <input class="solid" style="position:relative; width:640px; height:75px; left:620" align="right" type="text" id="sname" name="sname" value="Player 2 Name">
+
     <center>
-      <img id="imageToSwap" src="" style="width:600px; height:900px" align="left" />
-      <img id="vs.png" src="vs.png" style="position:relative; height:450px; top:250px" />
-      <img id="imageToSwap2" src="" style="width:600px; height:900px" align="right" />
+      <img id="imageToSwap" src="" style="width:640px; height:960px" align="left" />
+      <img id="vs.png" src="vs.png" style="position:relative; height:450px; top:200px" />
+      <img id="imageToSwap2" src="" style="width:640px; height:960px" align="right" />
     </center>
 
     <br>
@@ -56,6 +55,38 @@
     <br>
 
     <center>
+      <button onclick="openFullscreen();">Fullscreen Mode</button>
+      <script>
+        /* Get the documentElement (<html>) to display the page in fullscreen */
+        var elem = document.documentElement;
+
+        /* View in fullscreen */
+        function openFullscreen() {
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+          } else if (elem.webkitRequestFullscreen) {
+            /* Safari */
+            elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) {
+            /* IE11 */
+            elem.msRequestFullscreen();
+          }
+        }
+
+        /* Close fullscreen */
+        function closeFullscreen() {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.webkitExitFullscreen) {
+            /* Safari */
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) {
+            /* IE11 */
+            document.msExitFullscreen();
+          }
+        }
+
+      </script>
       <br>
       <label for="card1">Choose player 1 card:</label>
       <select id="card1" onChange="swapImage()">
@@ -295,7 +326,7 @@
       <p>
         Made by JustSpirit (ImJustSpirit) for RLBC.
         <br>
-      <br>
+        <br>
         <input type="button" onclick="location.href='http://battle-cards.co.uk';" value="RLBC" /> <input type="button" onclick="location.href='https://discord.com/invite/aMZrvJR';" value="Discord" /> <input type="button" onclick="location.href='http://twitch.tv/aircharged';" value="Twitch" />
       </p>
 
