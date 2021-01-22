@@ -1,7 +1,7 @@
 <html>
 
   <head>
-    <title>RLBC Stream Assistant+</title>
+    <title>RLBC Stream Assistant</title>
   </head>
 
   <body style="background-color:#671caa;">
@@ -33,7 +33,7 @@
       <d1>Card 1</d1>
       <br>
       <label for="card1">Choose a card:</label>
-      <select id="card1" onLoad="swapImage()" onChange="swapImage()">
+      <select id="card1" onOpen="openImage()" onChange="swapImage()">
         <option value="placeholder.jpg">Pick a card</option>
         <optgroup label="Diamond">
           <option value="cards/46.jpg">46 - Campos</option>
@@ -140,6 +140,14 @@
         function swapImage() {
           var image = document.getElementById("imageToSwap");
           var dropd = document.getElementById("card1");
+          image.src = dropd.value;
+        };
+
+      </script>
+      <script type="text/javascript">
+        function openImage() {
+          var image = document.getElementById("imageToSwap");
+          dropd.value = "placeholder.jpg";
           image.src = dropd.value;
         };
 
@@ -262,9 +270,15 @@
 
       </script>
       <br>
+      <br>
+      <p>
+        Made by JustSpirit(ImJustSpirit) for RLBC.
+        <br>
+        Checkout RLBC here:<input type="button" onclick="location.href='https://battle-cards.co.uk';" value="RLBC" />
+      </p>
+
     </center>
 
   </body>
 
 </html>
-
