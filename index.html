@@ -65,6 +65,24 @@
         border: 3px solid #555;
       }
 
+      input[type=text2] {
+        width: 100%;
+        padding: 1px 1px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 3px solid #ccc;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+        font-size: 40px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      input[type=text2]:focus {
+        border: 3px solid #555;
+      }
+
     </style>
   </head>
 
@@ -94,7 +112,9 @@
     <br>
     <br>
     <center>
+      <input class="solid" style="position:relative; width:53px; height:53px; top:6px" type="text2" id="score1" name="score1" value="0">
       <button class="button button5" onclick="toggleSettings()">Toggle Settings</button>
+      <input class="solid" style="position:relative; width:53px; height:53px; top:6px" type="text2" id="score2" name="score2" value="0">
       <div style="font-family: 'Montserrat', sans-serif;" id="myDIV">
         <script>
           function toggleSettings() {
