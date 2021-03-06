@@ -430,7 +430,7 @@
 
         <!-- Card 1 by number. -->
         <div id="myDIV4" style="display: none">
-          <select style="font-family: 'Montserrat', sans-serif;" id="card1" onChange="swapImage()">
+          <select style="font-family: 'Montserrat', sans-serif;" id="card1" onChange="swapImage3()">
             <option value="placeholder.jpg">Sorted by number</option>
             <optgroup label="Normal">
               <option value="cards/01.jpg">01 - Raid</option>
@@ -540,16 +540,6 @@
             </optgroup>
           </select>
         </div>
-
-        <!-- Update Card 1 on change. -->
-        <script type="text/javascript">
-          function swapImage() {
-            var image = document.getElementById("imageToSwap");
-            var dropd = document.getElementById("card1");
-            image.src = dropd.value;
-          };
-
-        </script>
 
         <br>
         <label for="card2">Choose player 2 card:</label>
@@ -680,10 +670,10 @@
             </optgroup>
           </select>
         </div>
-
+        
         <!-- Card 2 by number. -->
         <div id="myDIV6" style="display: none">
-          <select style="font-family: 'Montserrat', sans-serif;" id="card2" onChange="swapImage2()">
+          <select style="font-family: 'Montserrat', sans-serif;" id="card2" onChange="swapImage4()">
             <option value="placeholder.jpg">Sorted by number</option>
             <optgroup label="Normal">
               <option value="cards/01.jpg">01 - Raid</option>
@@ -794,28 +784,71 @@
           </select>
         </div>
 
-        <!-- Update Card 2 on change. -->
-        <script type="text/javascript">
-          function swapImage2() {
-            var image = document.getElementById("imageToSwap2");
-            var dropd = document.getElementById("card2");
-            image.src = dropd.value;
-          };
+        <!-- Update Cards on change -->
+        <div>
+          
+          <!-- Update Card 1 (rank) on change. -->
+          <script type="text/javascript">
+            function swapImage() {
+              var image = document.getElementById("imageToSwap");
+              var dropd = document.getElementById("card1");
+              image.src = dropd.value;
+            };
 
-        </script>
+          </script>
+        
+          <!-- Update Card 1 (number) on change. -->
+          <script type="text/javascript">
+            function swapImage3() {
+              var image = document.getElementById("imageToSwap");
+              var dropd = document.getElementById("card1");
+              image.src = dropd.value;
+            };
+
+          </script>
+        
+          <!-- Update Card 2 (rank) on change. -->
+          <script type="text/javascript">
+            function swapImage2() {
+              var image = document.getElementById("imageToSwap2");
+              var dropd = document.getElementById("card2");
+              image.src = dropd.value;
+            };
+
+          </script>
+        
+          <!-- Update Card 2 (number) on change. -->
+          <script type="text/javascript">
+            function swapImage4() {
+              var image = document.getElementById("imageToSwap2");
+              var dropd = document.getElementById("card2");
+              image.src = dropd.value;
+            };
+
+          </script>
+          
+        </div>
+        
         <br>
+        
       </div>
 
       <!-- Credits -->
       <p style="font-family: 'Montserrat', sans-serif;">
+        
+        <!-- Me -->
         Made by JustSpirit (ImJustSpirit) for RLBC.
+        
         <br>
         <br>
+        
+        <!-- Button Links -->
         <input type="button" class="click1" onclick="location.href='http://battle-cards.co.uk';" value="RLBC" /> <input type="button" class="click1" onclick="location.href='https://discord.com/invite/aMZrvJR';" value="Discord" /> <input type="button" class="click1" onclick="location.href='http://twitch.tv/aircharged';" value="Twitch" />
+        
       </p>
-      
+    
     </center>
-  
+    
   </body>
 
 </html>
