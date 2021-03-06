@@ -5,6 +5,9 @@
     <!-- Website Title -->
     <title>RLBC Stream Assistant</title>
 
+    <!-- SweetAlert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -273,14 +276,19 @@
             var x = Math.floor(Math.random() * 2);
             console.log(x);
             if (x == 0) {
-              alert("Player 1 Goes First");
+              Swal.fire({
+                title: 'Player 1 Goes First!',
+                icon: 'info',
+                confirmButtonText: "Let's play!"
+              })
             } else {
-              alert("Player 2 Goes First");
+              Swal.fire({
+                title: 'Player 2 Goes First!',
+                icon: 'info',
+                confirmButtonText: "Let's play!"
+              })
             }
           }
-
-          coinFlip();
-
         </script>
 
         <br>
@@ -292,8 +300,8 @@
         <button class="click1" onclick="openFullscreen();">Fullscreen Mode</button>
 
         <!-- Who Goes First -->
-        <!-- <button class="click1" onclick="coinFlip();" onclick="myFunction();" id="Coin">Who goes first</button> 
-        Need to make it so it doesn't kick you out of fullscreen.   -->
+        <button class="click1" onclick="coinFlip();" onclick="myFunction();" id="Coin">Who goes first</button> 
+        <!-- Need to make it so it doesn't kick you out of fullscreen.   -->
 
         <!-- Toggle Sort -->
         <button class="click1" onclick="toggleSort(); toggleSort2(); toggleSort3(); toggleSort4();">Toggle Sort</button>
