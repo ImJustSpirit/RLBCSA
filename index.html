@@ -430,7 +430,7 @@
 
         <!-- Card 1 by number. -->
         <div id="myDIV4" style="display: none">
-          <select style="font-family: 'Montserrat', sans-serif;" id="card1" onChange="swapImage3()">
+          <select style="font-family: 'Montserrat', sans-serif;" id="card3" onChange="swapImage3()">
             <option value="placeholder.jpg">Sorted by number</option>
             <optgroup label="Normal">
               <option value="cards/01.jpg">01 - Raid</option>
@@ -673,7 +673,7 @@
         
         <!-- Card 2 by number. -->
         <div id="myDIV6" style="display: none">
-          <select style="font-family: 'Montserrat', sans-serif;" id="card2" onChange="swapImage4()">
+          <select style="font-family: 'Montserrat', sans-serif;" id="card4" onChange="swapImage4()">
             <option value="placeholder.jpg">Sorted by number</option>
             <optgroup label="Normal">
               <option value="cards/01.jpg">01 - Raid</option>
@@ -801,7 +801,7 @@
           <script type="text/javascript">
             function swapImage3() {
               var image = document.getElementById("imageToSwap");
-              var dropd = document.getElementById("card1");
+              var dropd = document.getElementById("card3");
               image.src = dropd.value;
             };
 
@@ -821,7 +821,7 @@
           <script type="text/javascript">
             function swapImage4() {
               var image = document.getElementById("imageToSwap2");
-              var dropd = document.getElementById("card2");
+              var dropd = document.getElementById("card4");
               image.src = dropd.value;
             };
 
