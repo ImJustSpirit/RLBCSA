@@ -116,11 +116,6 @@
 
       <!-- Card 1 -->
       <img id="imageToSwap" src="placeholder.jpg" style="position:relative; width:640px; height:960px; left:10px" align="left" />
-
-      <!-- VS -->
-      <div id="myDIV7">
-        <img id="vs.png" src="vs.png" style="position:relative; height:450px; top:250px" />
-      </div>
       
       <!-- Card 2 -->
       <img id="imageToSwap2" src="placeholder.jpg" style="position:relative; width:640px; height:960px; right:10px" align="right" />
@@ -293,19 +288,6 @@
           }
         </script>
 
-        <!-- toggleVS() -->
-        <script>
-          function toggleVS() {
-            var x = document.getElementById("myDIV7");
-            if (x.style.display === "none") {
-              x.style.display = "block";
-            } else {
-              x.style.display = "none";
-            }
-          }
-
-        </script>
-
         <br>
 
         <!-- Toggle Fullscreen -->
@@ -321,9 +303,6 @@
 
         <!-- Toggle Sort -->
         <button class="click1" onclick="toggleSort(); toggleSort2(); toggleSort3(); toggleSort4();">Toggle Sort</button>
-
-        <!-- Toggle Sort -->
-        <button class="click1" onclick="toggleVS();">Toggle VS</button>
 
         <br>
         <br>
@@ -881,4 +860,3 @@
   </body>
 
 </html>
-
