@@ -7,6 +7,10 @@
 
     <!-- SweetAlert2 -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -274,14 +278,18 @@
             if (x == 0) {
               Swal.fire({
                 title: 'Player 1 Goes First!',
-                icon: 'info',
-                confirmButtonText: "Let's play!"
+                icon: 'success',
+                confirmButtonText: "Let's play!",
+                background: '#000000',
+                timer: '3000'
               })
             } else {
               Swal.fire({
                 title: 'Player 2 Goes First!',
-                icon: 'info',
-                confirmButtonText: "Let's play!"
+                icon: 'success',
+                confirmButtonText: "Let's play!",
+                background: '#000000',
+                timer: '3000'
               })
             }
           }
