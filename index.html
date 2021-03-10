@@ -238,6 +238,19 @@
 
         </div>
 
+        <!-- toggleVS() -->
+        <script>
+          function toggleVS() {
+            var x = document.getElementById("myDIV7");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+
+        </script>
+        
         <!-- openFullscreen() -->
         <script>
           /* Get the documentElement (<html>) to display the page in fullscreen */
@@ -309,6 +322,9 @@
 
         <!-- Toggle Sort -->
         <button class="click1" onclick="toggleSort(); toggleSort2(); toggleSort3(); toggleSort4();">Toggle Sort</button>
+
+        <!-- Toggle VS -->
+        <button class="click1" onclick="toggleVS();">Toggle VS</button>
 
         <br>
         <br>
