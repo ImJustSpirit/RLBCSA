@@ -117,9 +117,6 @@
       <!-- Card 1 -->
       <img id="imageToSwap" src="placeholder.jpg" style="position:relative; width:640px; height:960px; left:10px" align="left" />
       
-      <!-- VS -->
-      <img id="myDIV7" src="vs.png" onClick="toggleSettings(); toggleVS();" style="position:relative; display:none" align="middle" />
-      
       <!-- Card 2 -->
       <img id="imageToSwap2" src="placeholder.jpg" style="position:relative; width:640px; height:960px; right:10px" align="right" />
 
@@ -147,7 +144,7 @@
       <input class="solid" style="position:relative; width:53px; height:53px; top:9px" type="text2" id="score1" name="score1" value="0">
 
       <!-- Toggle Settings -->
-      <button class="button button5" onclick="toggleSettings(); toggleVS();">Toggle Settings</button>
+      <button class="button button5" onclick="toggleSettings()">Toggle Settings</button>
 
       <!-- Score Right -->
       <input class="solid" style="position:relative; width:53px; height:53px; top:9px" type="text2" id="score2" name="score2" value="0">
@@ -201,10 +198,10 @@
           <script>
             function toggleSort2() {
               var x = document.getElementById("myDIV4");
-              if (x.style.display === "none") {
-                x.style.display = "block";
-              } else {
+              if (x.style.display === "block") {
                 x.style.display = "none";
+              } else {
+                x.style.display = "block";
               }
             }
 
@@ -227,10 +224,10 @@
           <script>
             function toggleSort4() {
               var x = document.getElementById("myDIV6");
-              if (x.style.display === "none") {
-                x.style.display = "block";
-              } else {
+              if (x.style.display === "block") {
                 x.style.display = "none";
+              } else {
+                x.style.display = "block";
               }
             }
 
@@ -238,19 +235,6 @@
 
         </div>
 
-        <!-- toggleVS() -->
-        <script>
-          function toggleVS() {
-            var x = document.getElementById("myDIV7");
-            if (x.style.display === "none") {
-              x.style.display = "block";
-            } else {
-              x.style.display = "none";
-            }
-          }
-
-        </script>
-        
         <!-- openFullscreen() -->
         <script>
           /* Get the documentElement (<html>) to display the page in fullscreen */
