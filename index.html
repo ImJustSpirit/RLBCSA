@@ -118,7 +118,7 @@
       <img id="imageToSwap" src="placeholder.jpg" style="position:relative; width:640px; height:960px; left:10px" align="left" />
       
       <!-- VS -->
-      <img id="myDIV8" src="vs.png" style="position:relative; display:none" align="middle" />
+      <img id="myDIV7" src="vs.png" style="position:relative; display:none" align="middle" />
       
       <!-- Card 2 -->
       <img id="imageToSwap2" src="placeholder.jpg" style="position:relative; width:640px; height:960px; right:10px" align="right" />
@@ -201,10 +201,10 @@
           <script>
             function toggleSort2() {
               var x = document.getElementById("myDIV4");
-              if (x.style.display === "block") {
-                x.style.display = "none";
-              } else {
+              if (x.style.display === "none") {
                 x.style.display = "block";
+              } else {
+                x.style.display = "none";
               }
             }
 
@@ -227,10 +227,10 @@
           <script>
             function toggleSort4() {
               var x = document.getElementById("myDIV6");
-              if (x.style.display === "block") {
-                x.style.display = "none";
-              } else {
+              if (x.style.display === "none") {
                 x.style.display = "block";
+              } else {
+                x.style.display = "none";
               }
             }
 
