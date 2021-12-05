@@ -143,13 +143,13 @@
     <center>
 
       <!-- Score Left -->
-      <input class="solid" style="position:relative; width:53px; height:53px; top:9px" type="text2" id="score1" name="score1" value="0">
+      <input class="solid" style="position:relative; width:53px; height:53px; top:9px" type="text2" id="score1" name="score1" onclick="winner()" value="0">
 
       <!-- Toggle Settings -->
       <button class="button button5" onclick="toggleSettings()">Toggle Settings</button>
 
       <!-- Score Right -->
-      <input class="solid" style="position:relative; width:53px; height:53px; top:9px" type="text2" id="score2" name="score2" value="0">
+      <input class="solid" style="position:relative; width:53px; height:53px; top:9px" type="text2" id="score2" name="score2" onclick="winner()" value="0">
 
       <!-- Settings -->
       <div style="font-family: 'Montserrat', sans-serif;" id="myDIV">
@@ -292,6 +292,30 @@
             }
           }
         </script>
+          
+        <!-- winner() -->
+        <script>
+          function winner1() {
+            var fnm = document.getElementById("fname").value;
+            Swal.fire({
+              title: fnm,
+              imageUrl: 'win.png',
+              confirmButtonText: "GG",
+              background: 'Black',
+              timer: '3000'
+            })
+          }
+          function winner2() {
+            var snm = document.getElementById("sname").value;
+            Swal.fire({
+              title: snm,
+              imageUrl: 'win.png',
+              confirmButtonText: "GG",
+              background: 'Black',
+              timer: '3000'
+            })
+          }
+        </script>
 
         <br>
 
@@ -308,7 +332,15 @@
 
         <!-- Toggle Sort -->
         <button class="click1" onclick="toggleSort(); toggleSort2(); toggleSort3(); toggleSort4();">Toggle Sort</button>
+        
+        <br>
 
+        <!-- Toggle First to 7 -->
+        <button class="click1" onclick="winner1()">Player 1 Wins</button>
+          
+        <!-- Toggle First to 9 -->
+        <button class="click1" onclick="winner2()">Player 2 Wins</button>
+          
         <br>
         <br>
 
@@ -922,7 +954,6 @@
       </div>
 
       <!-- Buffer -->
-      <br>
       <br>
       <br>
       <br>
